@@ -1,4 +1,4 @@
-        // **** 10 FAST FINGERS HACK ****
+       // **** 10 FAST FINGERS HACK ****
 
 // var word_idx = 0;
 // var interval_per_word = 250; // in milliseconds
@@ -229,3 +229,20 @@ Schedule your message section ends here*/
 //   })
 // }
 // printTree(tree);
+
+
+
+// Problem 4 :- Create a function that calculates the number of different squares in an n * n square grid. Check the Resources tab.
+
+// var nums =0;
+// function numberSquares(n) {
+// 	if (n == 0){
+// 	   return;
+// 	}
+// 	// nums = nums+n**2;
+// 	// numberSquares(n-1);
+//         // return nums;
+//         return n**2 + numberSquares(--n);
+// };
+// const numberSquares = n => n > 1? n**2 + numberSquares(n-1) : 1;
+// console.log("the best i gpot", numberSquares(12));
