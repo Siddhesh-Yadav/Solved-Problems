@@ -1,4 +1,18 @@
-       // **** 10 FAST FINGERS HACK ****
+//        **** Fuck You Prank ****
+
+// document.getElementsByTagName("body")[0].addEventListener(
+//   "click",
+//   () =>
+//     (document.getElementsByTagName("body")[0].innerHTML = `<h1 style="
+//       color:red;
+//       text-align:center;
+//       font-weight:900;
+//       font-size:10rem;">FUCK YOU</h1>`)
+// );
+
+
+// **** 10 FAST FINGERS HACK ****
+
 
 // var word_idx = 0;
 // var interval_per_word = 250; // in milliseconds
@@ -14,10 +28,7 @@
 // }
 // setTimeout("hackit()", interval_per_word);
 
-
-
-
-        // **** WHATSAPP HACK ****
+// **** WHATSAPP HACK ****
 
 /*Schedule your message section starts here
 var now = new Date();
@@ -62,9 +73,8 @@ Schedule your message section ends here*/
 // function myFunc() {
 //   messageBox = document.querySelectorAll("[contenteditable='true']")[1];
 
-  
 //   counter = 5; // Replace 5 with the number of times you want to send your message
-  
+
 //   for (i = 0; i < counter; i++) {
 //     message = "I";
 //     event = document.createEvent("UIEvents");
@@ -79,7 +89,7 @@ Schedule your message section ends here*/
 //     messageBox.innerHTML = message.replace(/ /gm, ""); // test it
 //     // event.initUIEvent("input", true, true, window, 1);
 //     messageBox.dispatchEvent(event);
-    
+
 //     eventFire(document.querySelector('span[data-icon="send"]'), "click");
 
 //     message ="You";
@@ -87,16 +97,13 @@ Schedule your message section ends here*/
 //     messageBox.innerHTML = message.replace(/ /gm, ""); // test it
 //     // event.initUIEvent("input", true, true, window, 1);
 //     messageBox.dispatchEvent(event);
-    
+
 //     eventFire(document.querySelector('span[data-icon="send"]'), "click");
 //   }
 // }
 // myFunc();
 
-
-
-
-        // **** NETCLAN ASSIGNMENT ****
+// **** NETCLAN ASSIGNMENT ****
 
 // const s = []
 // const [count, setCount] = useState(s);
@@ -104,7 +111,7 @@ Schedule your message section ends here*/
 // const years = count.map(e=>{
 //   if (e.end_year > 0) {
 //     return e.end_year;
-//   } 
+//   }
 // });
 // var uniqYears = [ ...new Set(years) ];
 // console.log("dkjfd",Array.isArray(years),years,uniqYears);
@@ -117,16 +124,11 @@ Schedule your message section ends here*/
 // const topic = obj.map(e=>e.topic);
 // const sector = obj.map(e=>e.sector);
 
-
 // console.log("years",years.sort());
 // console.log("topic",topic.sort());
 // console.log("sector",sector.sort());
 
-
-
-
-                            // **** PROBLEMS ****
-
+// **** PROBLEMS ****
 
 // PROBLEM 1:- Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -144,7 +146,6 @@ Schedule your message section ends here*/
 //     }
 // };
 // console.log( twoSum(nums,target));
-
 
 // PROBLEM 2 :- Given an integer x, return true if x is palindrome integer.
 
@@ -164,7 +165,6 @@ Schedule your message section ends here*/
 //     return is;
 // };
 // console.log( isPalindrome(x))
-
 
 // PROBLEM 3 :- You have a family tree and you have to print every children of family with there generation
 
@@ -224,12 +224,11 @@ Schedule your message section ends here*/
 //   t.children.forEach((child,index) => {
 //       // you'd need to do some extra formatting here if you
 //       // want ordinals like "1st", "2nd", etc.
-//       console.log(`gen ${depth + 1}: ${child.name}`);                
+//       console.log(`gen ${depth + 1}: ${child.name}`);
 //       printTree(child, depth + 1);
 //   })
 // }
 // printTree(tree);
-
 
 
 // Problem 4 :- Create a function that calculates the number of different squares in an n * n square grid. Check the Resources tab.
@@ -246,3 +245,18 @@ Schedule your message section ends here*/
 // };
 // const numberSquares = n => n > 1? n**2 + numberSquares(n-1) : 1;
 // console.log("the best i gpot", numberSquares(12));
+
+
+// Problem 5 :- Find how many vowels are present in the String
+
+// function findVowels(str) {
+//     var vowels = ["a","e","i","o","u"];
+//     var count = 0;
+//     for (const char in str.toLowerCase()) {
+//         if (vowels.includes(char)) {
+//             count++;
+//         };
+//     }
+//     return count;
+// }
+// console.log( findVowels("siddheshaieou"));
