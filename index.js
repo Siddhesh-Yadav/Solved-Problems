@@ -10,9 +10,7 @@
 //       font-size:10rem;">FUCK YOU</h1>`)
 // );
 
-
 // **** 10 FAST FINGERS HACK ****
-
 
 // var word_idx = 0;
 // var interval_per_word = 250; // in milliseconds
@@ -230,7 +228,6 @@ Schedule your message section ends here*/
 // }
 // printTree(tree);
 
-
 // Problem 4 :- Create a function that calculates the number of different squares in an n * n square grid. Check the Resources tab.
 
 // var nums =0;
@@ -260,3 +257,20 @@ Schedule your message section ends here*/
 //     return count;
 // }
 // console.log( findVowels("siddheshaieou"));
+
+
+// Problem 6 :- Venkatesh__Remove any string between two strings at all occurences;
+
+// var str ="this is a string input(\"this is a string\") which is a good input(\"IloveYou3000\")";
+// console.log(str, "\noriginal string");
+// var count = (str.match(/input/g) || []).length;
+// for (let i = 0; i < count; i++) {
+//     var stringToBeRemoved = str.substring(
+//         str.indexOf("input(\""),
+//         str.indexOf("\")", str.indexOf("input("))+2
+//     );
+//     console.log(stringToBeRemoved, "\nstring to be removed");
+//     str = str.replace(stringToBeRemoved, "input()");
+//     console.log(str, "\nreplaced string");
+// }
+// console.log(str,"\nFinal String")
