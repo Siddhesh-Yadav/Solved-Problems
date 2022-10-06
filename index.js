@@ -274,3 +274,19 @@ Schedule your message section ends here*/
 //     console.log(str, "\nreplaced string");
 // }
 // console.log(str,"\nFinal String")
+
+
+// Problem 7 :- remove duplicates from an array or String
+
+// var a = ["a","b","c","a","d"]
+// // var a = "avbdckekjaidij";
+// function myFunc(str) {
+//     return str
+//     // .split("")
+//     .filter((char,index,arr)=>{
+//         return arr.indexOf(char) === index;
+//     })
+//     // .join("")
+        
+// };
+// console.log(myFunc(a));
