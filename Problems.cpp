@@ -254,28 +254,146 @@ int main()
 
 
     // Problem no 17 :- Hollow Rhombus 
-    int n;
-    cin>>n;
-    for(int i = 1; i <= n; i++){
-        for(int j = 1; j <= n - i; j++){
-            cout<<"  ";
-        }
-        for(int j = 1; j <= n; j++){
-            if(i == 1 || i == n){
-                cout<<"* ";
-            }else{
-                if(j == 1 || j == n){
-                    cout<<"* ";
-                }else{
-                    cout<<"  ";
-                }
-            }
-        }
-        cout<<endl;
-    }
+    // int n;
+    // cin>>n;
+    // for(int i = 1; i <= n; i++){
+    //     for(int j = 1; j <= n - i; j++){
+    //         cout<<"  ";
+    //     }
+    //     for(int j = 1; j <= n; j++){
+    //         if(i == 1 || i == n){
+    //             cout<<"* ";
+    //         }else{
+    //             if(j == 1 || j == n){
+    //                 cout<<"* ";
+    //             }else{
+    //                 cout<<"  ";
+    //             }
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+
+
+// Problem no 18:- Pyramid pattern for numbers .
+// int n; 
+// cin>>n;
+// for(int i = 1; i <= n;i++){
+//     for(int j = 1; j <= n - i; j++){
+//         cout<<" ";
+//     }
+//     for(int k = 1; k <= i; k++){
+//         cout<<i<<" ";
+//     }
+//     cout<<endl;
+// }
+
+
+
+// Problem no 19:- Pyramid pattern for numbers No -2.
+// int n; 
+// cin>>n;
+// for(int i = 1; i <= n;i++){
+//     int l = 1;
+//     for(int j = 1; j <= n - i; j++){
+//         cout<<" ";
+//     }
+//     for(int k = 1; k <= i; k++){
+//         cout<<l<<" ";
+//         l++;
+//     }
+//     cout<<endl;
+// }
+
+
+// Problem no 20:- Butterfly.
+// int n; 
+// cin>>n;
+// for(int i = 1; i <= n;i++){
+//     for(int j = 1; j <= i; j++){
+//         cout<<"* ";
+//     }
+//     for(int k = 1; k <= 2 * n - 2 * i; k++){
+//         cout<<"  ";
+//     }
+//     for(int l = 1; l <= i; l++){
+//         cout<<"* ";
+//     }
+//     cout<<endl;
+// }
+// for(int i = n; i >= 1;i--){
+//     for(int j = 1; j <= i; j++){
+//         cout<<"* ";
+//     }
+//     for(int k = 1; k <= 2 * n - 2 * i; k++){
+//         cout<<"  ";
+//     }
+//     for(int l = 1; l <= i; l++){
+//         cout<<"* ";
+//     }
+//     cout<<endl;
+// }
 
 
 
 
+// Problem no 21:- Hollow Butterfly.
+// int n; 
+// cin>>n;
+// for(int i = 1; i <= n;i++){
+//     for(int j = 1; j <= i; j++){
+//         if(j == 1 || j == i){
+//             cout<<"* ";
+//         }else{
+//             cout<<"  ";
+//         }
+//     }
+//     for(int k = 1; k <= 2 * n - 2 * i; k++){
+//         cout<<"  ";
+//     }
+//     for(int l = 1; l <= i; l++){
+//         if(l == 1 || l == i){
+//             cout<<"* ";
+//         }else{
+//             cout<<"  ";
+//         }
+//     }
+//     cout<<endl;
+// }
+// for(int i = n; i >= 1;i--){
+//     for(int j = 1; j <= i; j++){
+//         if(j == 1 || j == i){
+//             cout<<"* ";
+//         }else{
+//             cout<<"  ";
+//         }
+//     }
+//     for(int k = 1; k <= 2 * n - 2 * i; k++){
+//         cout<<"  ";
+//     }
+//     for(int l = 1; l <= i; l++){
+//         if(l == 1 || l == i){
+//             cout<<"* ";
+//         }else{
+//             cout<<"  ";
+//         }
+//     }
+//     cout<<endl;
+// }
+
+
+// Problem no 22 :- Zig Zag pattern.
+// int n;
+// cin>>n;
+// for(int i = 1; i <= 3; i++){
+//     for (int j = 1; j <= n;j++){
+//         if((i + j) % 4 == 0 || (i == 2 && j % 4 == 0)){
+//             cout<<"* ";
+//         }else{
+//             cout<<"  ";
+//         }
+//     }
+//     cout<<endl;
+// }
     return 0;
 }
