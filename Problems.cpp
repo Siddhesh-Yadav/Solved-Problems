@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cmath>
+#include <math.h>
 using namespace std;
 
 // Problem no 0 :- Print hello world!
@@ -7,6 +9,16 @@ using namespace std;
 //     return 0;
 // }
 
+// Problem no 29 Function.
+int fact(int n){
+    int factorial = 1;
+    for(int i = 2; i <= n; i++){
+        factorial *= i;
+    }
+    return factorial;
+}
+
+
 int main()
 {
     // int rows, columns;
@@ -14,6 +26,8 @@ int main()
     // cin >> rows;
     // cout << "Enter number of Columns\n";
     // cin>>columns;
+    int n;
+    cin>>n;
 
     // Problem no 1 :- Print a solid rectangle.
     // for (int i = 1; i <= rows; i++){
@@ -131,9 +145,6 @@ int main()
 
 
     // Problem no 12 :- 5 Palindromic pattern.
-    // int r;
-    // cout<<"enter r";
-    // cin >> r;
     // for (int i = 1; i <= r; i++){
 
     //     for(int k = 1; k <= r - i; k++){
@@ -152,9 +163,6 @@ int main()
 
 
     // Problem no 13 :- Print Diamond using stars with 2n rows;
-    // int n;
-    // cout<<"enter number of rows you want to print";
-    // cin>>n;
     // for(int i = 1; i <= n; i++){
     //     for(int j = 1; j <= n - i; j++){
     //         cout<<" ";
@@ -176,8 +184,6 @@ int main()
 
 
     // Problem no 14 :- Print a hollow diamond.
-    // int rows;
-    // cin>>rows;
     // for (int i = 1; i <= rows; i++){
     //     for(int j = 1; j <= rows - i; j++){
     //         cout<<"  ";
@@ -207,8 +213,6 @@ int main()
 
 
     // Problem no 15 :- Print a hollow diamond inscribed in a rectanlge.
-    // int rows;
-    // cin>>rows;
     // int k = -1;
     // for(int i = 1; i <= rows; i++){
     //     for (int j = 1; j <=(rows * 2) - 1; j++){
@@ -240,8 +244,6 @@ int main()
 
 
     // Problem no 16 :- rhombus
-    // int n;
-    // cin>>n;
     // for(int i = 1; i <= n; i++){
     //     for(int j = 1; j <= n - i; j++){
     //         cout<<" ";
@@ -253,9 +255,7 @@ int main()
     // }
 
 
-    // Problem no 17 :- Hollow Rhombus 
-    // int n;
-    // cin>>n;
+    // Problem no 17 :- Hollow Rhombus
     // for(int i = 1; i <= n; i++){
     //     for(int j = 1; j <= n - i; j++){
     //         cout<<"  ";
@@ -275,125 +275,208 @@ int main()
     // }
 
 
-// Problem no 18:- Pyramid pattern for numbers .
-// int n; 
-// cin>>n;
-// for(int i = 1; i <= n;i++){
-//     for(int j = 1; j <= n - i; j++){
-//         cout<<" ";
-//     }
-//     for(int k = 1; k <= i; k++){
-//         cout<<i<<" ";
-//     }
-//     cout<<endl;
-// }
+    // Problem no 18:- Pyramid pattern for numbers .
+    // for(int i = 1; i <= n;i++){
+    //     for(int j = 1; j <= n - i; j++){
+    //         cout<<" ";
+    //     }
+    //     for(int k = 1; k <= i; k++){
+    //         cout<<i<<" ";
+    //     }
+    //     cout<<endl;
+    // }
 
 
 
-// Problem no 19:- Pyramid pattern for numbers No -2.
-// int n; 
-// cin>>n;
-// for(int i = 1; i <= n;i++){
-//     int l = 1;
-//     for(int j = 1; j <= n - i; j++){
-//         cout<<" ";
-//     }
-//     for(int k = 1; k <= i; k++){
-//         cout<<l<<" ";
-//         l++;
-//     }
-//     cout<<endl;
-// }
+    // Problem no 19:- Pyramid pattern for numbers No -2.
+    // for(int i = 1; i <= n;i++){
+    //     int l = 1;
+    //     for(int j = 1; j <= n - i; j++){
+    //         cout<<" ";
+    //     }
+    //     for(int k = 1; k <= i; k++){
+    //         cout<<l<<" ";
+    //         l++;
+    //     }
+    //     cout<<endl;
+    // }
 
 
-// Problem no 20:- Butterfly.
-// int n; 
-// cin>>n;
-// for(int i = 1; i <= n;i++){
-//     for(int j = 1; j <= i; j++){
-//         cout<<"* ";
-//     }
-//     for(int k = 1; k <= 2 * n - 2 * i; k++){
-//         cout<<"  ";
-//     }
-//     for(int l = 1; l <= i; l++){
-//         cout<<"* ";
-//     }
-//     cout<<endl;
-// }
-// for(int i = n; i >= 1;i--){
-//     for(int j = 1; j <= i; j++){
-//         cout<<"* ";
-//     }
-//     for(int k = 1; k <= 2 * n - 2 * i; k++){
-//         cout<<"  ";
-//     }
-//     for(int l = 1; l <= i; l++){
-//         cout<<"* ";
-//     }
-//     cout<<endl;
-// }
+    // Problem no 20:- Butterfly.
+    // for(int i = 1; i <= n;i++){
+    //     for(int j = 1; j <= i; j++){
+    //         cout<<"* ";
+    //     }
+    //     for(int k = 1; k <= 2 * n - 2 * i; k++){
+    //         cout<<"  ";
+    //     }
+    //     for(int l = 1; l <= i; l++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
+    // for(int i = n; i >= 1;i--){
+    //     for(int j = 1; j <= i; j++){
+    //         cout<<"* ";
+    //     }
+    //     for(int k = 1; k <= 2 * n - 2 * i; k++){
+    //         cout<<"  ";
+    //     }
+    //     for(int l = 1; l <= i; l++){
+    //         cout<<"* ";
+    //     }
+    //     cout<<endl;
+    // }
 
 
+    // Problem no 21:- Hollow Butterfly.
+    // for(int i = 1; i <= n;i++){
+    //     for(int j = 1; j <= i; j++){
+    //         if(j == 1 || j == i){
+    //             cout<<"* ";
+    //         }else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     for(int k = 1; k <= 2 * n - 2 * i; k++){
+    //         cout<<"  ";
+    //     }
+    //     for(int l = 1; l <= i; l++){
+    //         if(l == 1 || l == i){
+    //             cout<<"* ";
+    //         }else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
+    // for(int i = n; i >= 1;i--){
+    //     for(int j = 1; j <= i; j++){
+    //         if(j == 1 || j == i){
+    //             cout<<"* ";
+    //         }else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     for(int k = 1; k <= 2 * n - 2 * i; k++){
+    //         cout<<"  ";
+    //     }
+    //     for(int l = 1; l <= i; l++){
+    //         if(l == 1 || l == i){
+    //             cout<<"* ";
+    //         }else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
 
 
-// Problem no 21:- Hollow Butterfly.
-// int n; 
-// cin>>n;
-// for(int i = 1; i <= n;i++){
-//     for(int j = 1; j <= i; j++){
-//         if(j == 1 || j == i){
-//             cout<<"* ";
-//         }else{
-//             cout<<"  ";
-//         }
-//     }
-//     for(int k = 1; k <= 2 * n - 2 * i; k++){
-//         cout<<"  ";
-//     }
-//     for(int l = 1; l <= i; l++){
-//         if(l == 1 || l == i){
-//             cout<<"* ";
-//         }else{
-//             cout<<"  ";
-//         }
-//     }
-//     cout<<endl;
-// }
-// for(int i = n; i >= 1;i--){
-//     for(int j = 1; j <= i; j++){
-//         if(j == 1 || j == i){
-//             cout<<"* ";
-//         }else{
-//             cout<<"  ";
-//         }
-//     }
-//     for(int k = 1; k <= 2 * n - 2 * i; k++){
-//         cout<<"  ";
-//     }
-//     for(int l = 1; l <= i; l++){
-//         if(l == 1 || l == i){
-//             cout<<"* ";
-//         }else{
-//             cout<<"  ";
-//         }
-//     }
-//     cout<<endl;
-// }
+    // Problem no 22 :- Zig Zag pattern.
+    // for(int i = 1; i <= 3; i++){
+    //     for (int j = 1; j <= n;j++){
+    //         if((i + j) % 4 == 0 || (i == 2 && j % 4 == 0)){
+    //             cout<<"* ";
+    //         }else{
+    //             cout<<"  ";
+    //         }
+    //     }
+    //     cout<<endl;
+    // }
 
 
-// Problem no 22 :- Zig Zag pattern.
-// int n;
-// cin>>n;
-// for(int i = 1; i <= 3; i++){
-//     for (int j = 1; j <= n;j++){
-//         if((i + j) % 4 == 0 || (i == 2 && j % 4 == 0)){
-//             cout<<"* ";
-//         }else{
-//             cout<<"  ";
-//         }
-//     }
-//     cout<<endl;
-// }
-    return 0;
+    // Problem no 23 :- Check whether the number is prime or not.
+    // int flag = 0;
+    // for(int i = 2; i <= sqrt(n); i++){
+    //     if(n % i == 0){
+    //         cout<<"Not prime";
+    //         flag = 1;
+    //     }
+    // }
+    // if(flag == 0){
+    //     cout<<"Prime";
+    // }
+
+    // Problem no 24 :- Print all the digits of a number from right to left.
+    // while (n > 0){
+        // Remainder that remains after dividing any number from 10 is the last digit.
+        // int rem = n % 10;
+        // cout<<rem<<"\n";
+        // Here int dosent support numbers after decimal so numbers after point are getting deleted.
+    //     n = n / 10;
+    // }
+    
+
+    // Problem no 25 :- Reverse a number.
+    // int reversed = 0;
+    // while(n > 0){
+    //     int lastDigit = n % 10;
+    //     reversed = reversed * 10 + lastDigit;
+    //     n = n / 10;
+    // }
+    // cout<<reversed;
+    // n = 1234; 
+    // lastDigit = 0;
+    // lastDigit = (10 * 0) + 4;
+    // lastDigit = (10 * 4) + 3;
+    // lastDigit = (10 * 43) + 2;
+    // lastDigit = (10 * 432) + 1;
+    // lastDigit = 4321;
+
+
+    // Problem no 26 :- Check the whether the given number is Armstrong number or not.
+    // int sum = 0;
+    // int original = n;
+    // while(n>0){
+    //     int lastDigit = n % 10;
+    //     // sum += pow(lastDigit,3);
+    //     sum += lastDigit * lastDigit * lastDigit;
+    //     n = n/10;
+    // }
+    // if(sum == original){
+    //     cout<<"Armstrong Number";
+    // }else{
+    //     cout<<"Not an Armstrong NumberlastDigit";
+    // }
+
+    // Problem no 27 :- Print all the prime numbers between given numbers.
+    // int a,b;
+    // cin>>a>>b;
+    // for(int i = a; i <= b; i++){
+    //     int isPrime = 1;
+    //     for(int j = 2; j <= sqrt(i); j++){
+    //         if(i%j ==0){
+    //             isPrime = 0;
+    //         }
+    //     }
+    //     if(isPrime == 1){
+    //         cout<<i<<endl;
+    //     }
+    // }
+
+    // Problem no 28 :- Fibbonacci Sequence.
+    // int t1 = 0;
+    // int t2 = 1;
+    // int nextTerm;
+    // cout<<t1<<endl<<t2<<endl;
+    // for(int i = 1;i<= n; i++){
+    //     nextTerm = t1 + t2;
+    //     cout<<nextTerm<<endl;
+    //     t1 = t2;
+    //     t2 = nextTerm;
+    // }
+    
+
+    // Problem no 29 :- Pascals triangle.
+    // Hint: every number is in nCr(iCj) pattern where formula is n!/(n-r)!*r!.
+    // for(int i = 0; i < n; i++){
+    //     for(int k = 1; k <= n - i;k++){
+    //         cout<<" ";
+    //     }
+    //     for(int j = 0; j <= i; j++){
+    //         cout<<fact(i)/(fact(i-j)*fact(j))<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+    return 0; 
 }
