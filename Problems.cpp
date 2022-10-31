@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <climits>
 #include <math.h>
 using namespace std;
 
@@ -10,24 +11,23 @@ using namespace std;
 // }
 
 // Problem no 29 Function.
-int fact(int n){
-    int factorial = 1;
-    for(int i = 2; i <= n; i++){
-        factorial *= i;
-    }
-    return factorial;
-}
+// int fact(int n){
+//     int factorial = 1;
+//     for(int i = 2; i <= n; i++){
+//         factorial *= i;
+//     }
+//     return factorial;
+// }
 
 
-int main()
-{
+int main(){
     // int rows, columns;
     // cout << "Enter number of Rows\n";
     // cin >> rows;
     // cout << "Enter number of Columns\n";
     // cin>>columns;
-    int n;
-    cin>>n;
+    // int n;
+    // cin>>n;
 
     // Problem no 1 :- Print a solid rectangle.
     // for (int i = 1; i <= rows; i++){
@@ -478,5 +478,185 @@ int main()
     //     }
     //     cout<<endl;
     // }
+
+
+    //                                          ## Arrays ##
+    // Problem no 30 :- Print the sum of all the elements of all possible subArrays.
+    // int arr2[5]={1,2,0,7,5};
+    // int sum = 0;
+    // for(int i = 0; i < 5; i++){
+    //     for(int j = i; j < 5;j++){
+    //         sum += arr2[j];
+    //     }
+    // }    
+    // cout<<sum;
+
+
+    // Problem no 31 [KickStart]:- An arithmetic array is an array that contains at least two integers and the differences
+    // between consecutive integers are equal.For example, [9, 10], [3, 3, 3], and [9,7, 5,3]are arithmetic arrays, 
+    // while [1, 3, 3, 7], [2, 1, 2], and [1, 2, 4]are not arithmetic arrays.
+    //     Sarasvati has an array of N non-negative integers. The i-th integer of the array is A. She wants to choose
+    // a contiguous arithmeticsubarray from her array that has the maximum length Please help her to determine the
+    // length of the longest contiguous arithmetic subarray.
+
+    // int n;
+    // cin>>n;
+    // int a[n];
+    // for (int i = 0; i < n; i++){
+    //     cin>>a[i];
+    // };
+    
+    // int ans = 2;
+    // int pd = a[1]-a[0];
+    // int j =2;
+    // int current = 2;
+    // while (j<n){
+    //     if(pd == a[j]-a[j-1]){
+    //         current++;
+    //     }else{
+    //         pd = a[j]-a[j-1];
+    //         current = 2;
+    //     }
+    //         ans = max(current,ans);
+    //     j++;
+    // }
+    // cout<<ans<<endl;
+
+
+    // Problem no 32 : - Isyana is given the number of visitors at her local theme park on N consecutive days.The number of visitors on the i-th day is V₁.A day is record breaking if it satisfies both of the following conditions: The number of visitors on the day is strictly larger than the number of visitors on each of the previous days. Either it is the last day, or the number of visitors on the day is strictly larger than the number of visitors on the following day. Note that the very first day could be a record breaking day! Please help Isyana find out the number of record breaking days.
+
+    // int n;
+    // cin>>n;
+    // int a[n+1];
+    // a[n]= -1; // to satisfy the last day test case number of visitors cant be negative.
+    // for(int i =0; i < n; i++){
+    //     cin>>a[i];
+    // }
+    // if(n ==1){
+    //     cout<<"1"<<endl;
+    //     return 0;
+    // }
+
+    // int ans = 0;
+    // int mx = -1;
+
+    // for(int i = 0; i < n; i++){
+    //     if(a[i]>mx && a[i]> a[i+1]){
+    //         ans++;
+    //     }
+    //     mx = max(mx,a[i]);
+    // }
+    // cout<<ans<<endl;
+
+
+    // Problem 33 :- Given an array arr[] of size N. The task is to find the first repeating eleme  smallest.
+    // int n;
+    // cin>>n;
+
+    // int a[n];
+    // for (int i = 0; i < n; i++){
+    //     cin>>a[i]; 
+    // }
+
+    // for(int i = 0; i < n; i++){
+    //     int j;
+    //     for(j = i + 1; j < n; j++){                 // N! - n factorial times//
+    //         if (a[i] == a[j]){
+    //             cout<< i<<'h';
+    //             break;
+    //         }            
+    //     }
+    //     if(j != n){
+    //         break;
+    //     }
+    // }
+    
+    // int n ;
+    // cin >> n;
+    // int a[n];
+    // for(int i = 0; i < n; i++){
+    //     cin>>a[i];
+    // };
+    // const int N = 1e6+2;
+
+    // int arr[N];
+    // for (int i = 0; i < N; i++){
+    //     arr[i] = -1;
+    // }
+
+    // int minidx = INT_MAX;
+    // for (int i = 0; i < n; i++){
+    //     if(arr[a[i]] != -1){
+    //         minidx = min(minidx , arr[a[i]]);
+    //     }else{
+    //         arr[a[i]] = i;
+    //     }
+    // }
+    // if(minidx == INT_MAX){
+    //     cout<<"-1"<<endl;
+    // }else{
+    //     cout<<minidx + 1<<endl; //+1 for 1 base indexing
+    // }
+    
+
+    // Problem 34 : - You are given an array arr[] of N integers including 0. The task is to find the smallest positive number missing from the array.
+
+    // int n;
+    // cin>> n;
+    // int arr[n];
+    // for (int i = 0; i < n; i++){
+    //     cin>>arr[i];
+    // };
+
+    // const int N = 1e6 + 2;
+
+    // bool check[N];
+    // for (int i = 0; i < N; i++){
+    //     check[i] = false;
+    // };
+
+    // for (int i = 0; i < n; i++){
+    //     if(arr[i]>=0){
+    //         check[arr[i]] = true;
+    //     }
+    // }
+    // int ans = -1;
+
+    // for(int i = 1; i < N; i++){
+    //     if (check[i] == false){
+    //         ans = i;
+    //         break;
+    //     }        
+    // }
+    // cout<<ans;
+    
+    
+    // Problem 35 :- Maximum SubArray Sum - Find the sub array which has maximum sum.
+    int n;
+    cin>>n;
+    int arr[n];
+    for (int i = 0; i < n ; i++){
+        cin>>arr[i];
+    };
+
+    // Brute force 
+    // int max_sum = INT_MIN;
+    // for (int i = 0; i < n; i++){
+    //     for (int j = i; j < n; j++){
+    //         int sum = 0;
+    //         for (int k = i; k <= j; k++){
+    //             // cout<<arr[k]<<" ";    
+    //             sum += arr[k];            
+    //         }            
+    //         // cout<<endl;
+    //         max_sum = max(max_sum, sum);
+    //     }
+    // }
+    // cout<< max_sum;
+        
+    
+
+    
+
     return 0; 
 }
