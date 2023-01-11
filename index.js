@@ -101,30 +101,7 @@ Schedule your message section ends here*/
 // }
 // myFunc();
 
-// **** NETCLAN ASSIGNMENT ****
 
-// const s = []
-// const [count, setCount] = useState(s);
-
-// const years = count.map(e=>{
-//   if (e.end_year > 0) {
-//     return e.end_year;
-//   }
-// });
-// var uniqYears = [ ...new Set(years) ];
-// console.log("dkjfd",Array.isArray(years),years,uniqYears);
-
-// years.map(a=>{
-//   const obj = count.filter(e => e.end_year == a);
-//   const region = obj.map(e=>e.region);
-//   console.log("region",region.sort());
-// })
-// const topic = obj.map(e=>e.topic);
-// const sector = obj.map(e=>e.sector);
-
-// console.log("years",years.sort());
-// console.log("topic",topic.sort());
-// console.log("sector",sector.sort());
 
 // **** PROBLEMS ****
 

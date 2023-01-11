@@ -549,7 +549,7 @@ int main(){
     // cout<<ans<<endl;
 
 
-    // Problem 33 :- Given an array arr[] of size N. The task is to find the first repeating eleme  smallest.
+    // Problem 33 :- Given an array arr[] of size N. The task is to find the first repeating element  smallest.
     // int n;
     // cin>>n;
 
@@ -632,14 +632,14 @@ int main(){
     
     
     // Problem 35 :- Maximum SubArray Sum - Find the sub array which has maximum sum.
-    int n;
-    cin>>n;
-    int arr[n];
-    for (int i = 0; i < n ; i++){
-        cin>>arr[i];
-    };
+    // int n;
+    // cin>>n;
+    // int arr[n];
+    // for (int i = 0; i < n ; i++){
+    //     cin>>arr[i];
+    // };
 
-    // Brute force 
+    // Brute force  O(n3)
     // int max_sum = INT_MIN;
     // for (int i = 0; i < n; i++){
     //     for (int j = i; j < n; j++){
@@ -654,9 +654,191 @@ int main(){
     // }
     // cout<< max_sum;
         
+    //KADANE'S ALGO O(n); replace current sum to zero if it goes down 0 so it count will restart from that element.
+    // int maxSum = INT_MIN;
+    // int currentSum = 0;
+    // for(int i = 0; i < n; i++){
+    //     currentSum += arr[i];
+    //     if (currentSum < 0){
+    //         currentSum = 0;
+    //     }
+    //     maxSum = max(maxSum, currentSum);
+    // }
+    // cout<<maxSum;
+
+
+    //                                          2D ARRAYS 
+    // Problem 36 :- print a matrix in a spiral order.
+    // int n,m;
+    // cin>>n>>m;
+    // int arr[n][m];
+    // for (int i = 0; i < n; i++){
+    //     for (int j = 0; j < m; j++){
+    //         cin>>arr[i][j];
+    //     }
+    //     cout<<endl;      
+    // }
+    // for (int i = 0; i < n; i++){
+    //     for (int j = 0; j < m; j++){
+    //         cout<<arr[i][j]<<" ";
+    //     }
+    //     cout<<endl;
+    // }
+
+    // int rowStart, rowEnd, colStart, colEnd;
+    // rowStart = 0;
+    // rowEnd = n - 1;
+    // colStart = 0;
+    // colEnd = m -1;
+
+    // while (rowStart <= rowEnd && colStart <=colEnd) {
+    //     for (int col = colStart; col <= colEnd; col++){
+    //         cout<<arr[rowStart][col];
+    //     }
+    //     rowStart++;
+    //     for (int row = rowStart; row <= rowEnd; row++){
+    //         cout<<arr[row][colEnd];
+    //     }
+    //     colEnd--;
+    //     for (int col = colEnd; col >= colStart; col--){
+    //         cout<<arr[rowEnd][col];
+    //     }
+    //     rowEnd--;
+    //     for (int row = rowEnd; row >= rowStart; row--){
+    //         cout<<arr[row][colStart];
+    //     }
+    //     colStart++;
+    // }
     
 
+
+    // Problem no 37 :- Display the 3-tupple representation of sparse matrix.
+    // int n,m;
+    // cin>>n>>m;
+    // int arr[n][m];
+    // for (int i = 0; i < n; i++){
+    //     for (int j = 0; j < m; j++){
+    //         cin>>arr[i][j];
+    //     }
+    //     cout<<endl;      
+    // }
+
+    // for (int i = 0; i < n; i++){
+    //     for (int j = 0; j < m; j++){
+    //         if(arr[i][j] != 0){
+    //             cout<<i<<" "<<j<<" "<<arr[i][j]<<endl;
+    //         }
+    //     }
+        
+    // }
+    
+    // Problem no 38 :- add two polynomial using 2d arrays.
+    // int poly1[6][2], poly2[6][2], term1, term2, i, j, proceed;
+    // cout<<"enter term1";
+    // cin>>term1;
+    // cout<<"enter term2";
+    // cin>>term2;
+    // cout<<"first poly"<<endl;
+    // for ( i = 0; i < term1; i++){
+    //     cin>>poly1[i][0]>>poly1[i][1];
+    // }
+    // cout<<"second poly"<<endl;
+    // for ( i = 0; i < term2; i++){
+    //     cin>>poly2[i][0]>>poly2[i][1];
+    // }
+    // cout<<"addition"<<endl;
+    // for ( i = 0; i < term1; i++){
+    //     for ( j = 0; j < term2; j++){
+    //         if(poly1[i][1]==poly2[j][1]){
+    //             cout<<poly1[i][0]+poly2[j][0]<<" "<<poly1[i][1]<<endl;
+    //         }
+    //     }        
+    // }
+    // for ( i = 0; i < term1; i++){
+    //     proceed = 1;
+    //     for ( j = 0; j < term2; j++){
+    //         if(poly1[i][1] == poly2[j][1])
+    //         {
+    //             proceed = 0;
+    //         }
+    //     }
+    //     if(proceed == 1){
+    //         cout<<poly1[i][0]<<" "<<poly1[i][1]<<endl;
+    //     } 
+    // }
+    // for ( i = 0; i < term2; i++){
+    //     proceed = 1;
+    //     for ( j = 0; j < term1; j++){
+    //         if(poly2[i][1] == poly1[j][1])
+    //         {
+    //             proceed = 0;
+    //         }
+    //     }
+    //     if(proceed == 1){
+    //         cout<<poly2[i][0]<<" "<<poly2[i][1]<<endl;
+    //     } 
+    // }
     
 
+    //                                  ## CHARACTER ARRAY ##
+
+    //Q1 :- Check plaindrome
+    // int n;
+    // cout<<"Enter length of the word"<<endl;
+    // cin>>n;
+    // char arr[n+1];
+    // cin>>arr;
+
+    // int isPalindrome = true;
+    // for (int i = 0; i < n; i++)
+    // {
+    //     if(arr[i]!=arr[n-1-i]){
+    //         isPalindrome = false;
+    //     }
+    // }
+    // if (isPalindrome)
+    // {
+    //     cout<<arr<<" is Palindrome";
+    // }
+    // else{
+    //     cout<<arr<<" is not a Palindrome";
+    // }
+    
+    // Q2:- Find largest word from a sentence
+    int n;
+    cin>>n;
+    cin.ignore();
+    char arr[n+1];
+    cin.getline(arr,n);
+    cin.ignore();
+
+    int currLen = 0, maxLen = 0;
+    int st = 0, maxst = 0;
+    int i = 0;
+    while (1){
+        if(arr[i]==' '||arr[i]=='\0'){
+            if(currLen>maxLen){
+                maxLen = currLen; 
+                maxst = st;               
+            }
+            currLen = 0;
+            st = i+1;   
+        }
+        else{
+            currLen++;
+        };
+        if(arr[i]=='\0'){
+            break;
+        };
+        i++;
+    }
+    
+
+    cout<<maxLen<<endl;
+    for (int i = 0; i <= maxLen; i++)
+    {
+        cout<<arr[i+maxst];
+    }
+    
     return 0; 
 }
